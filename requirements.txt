@@ -1,0 +1,12 @@
+pytest-html
+pymssql
+pyodbc~=4.0.32
+pyOpenSSL
+selenium
+flake8
+flake8-builtins
+flake8-isort
+pandas~=1.4.2
+SQLAlchemy~=1.4.36
+pytest~=7.1.2
+variables~=0.0.1
