@@ -1,0 +1,13 @@
+pipeline {
+   agent any
+
+   stages {
+
+      stage('runpy') {
+        steps{
+          bat 'test_DB_AdventureWorks2017.py'
+        }
+        }
+
+  }
+}
