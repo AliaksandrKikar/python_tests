@@ -16,6 +16,11 @@ pipeline {
                    sh 'python3 python_test.py'
                 }
             }
+            stage('run python script - tests.py') {
+                steps {
+                   sh 'python3 tests.py'
+                }
+            }
             stage('Start automated tests') {
                 steps {
                    sh 'python3 test_DB_AdventureWorks2017.py'
