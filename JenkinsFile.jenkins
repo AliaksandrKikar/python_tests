@@ -3,8 +3,9 @@ pipeline {
         stages {
             stage('Test') {
                 steps {
-                    echo 'Hello World ...'
-                    bat 'main.py'
+                   # echo 'Hello World ...'
+                   # bat 'main.py'
+                   python3 --version
                 }
             }
         }
