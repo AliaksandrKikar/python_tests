@@ -1,4 +1,7 @@
-FROM python:3.9
-WORKDIR /
-COPY test_DB_AdventureWorks2017.py ./
-CMD ["python", "./test_DB_AdventureWorks2017.py"]
+FROM jenkins/jenkins:lts-jdk11
+USER root
+RUN mkdir /my_app
+WORKDIR /my_app
+COPY main.py /my_app
+RUN apt update
+RUN apt install -y python3
