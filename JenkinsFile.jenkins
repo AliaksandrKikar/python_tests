@@ -13,7 +13,7 @@ pipeline {
             }
             stage('Start automated tests') {
                 steps {
-                   sh 'test_DB_AdventureWorks2017.py'
+                   sh 'python3 test_DB_AdventureWorks2017.py'
                 }
             }
         }
