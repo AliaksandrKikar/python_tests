@@ -1,10 +1,19 @@
 pipeline {
         agent any
         stages {
+            stage('Hello') {
+                steps {
+                   echo 'Hello!'
+                }
+            }
             stage('Test') {
                 steps {
-                    echo 'Hello World ...'
-                    bat 'main.py'
+                   sh 'python3 --version'
+                }
+            }
+            stage('Start automated tests') {
+                steps {
+                   sh 'python3 test_DB_AdventureWorks2017.py'
                 }
             }
         }
