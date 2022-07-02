@@ -9,7 +9,7 @@ class TestDataBase:
 #     drivers = [item for item in pyodbc.drivers()]
 #     driver = drivers[1]
     
-    conn = pyodbc.connect(DRIVER='/etc/',
+    conn = pyodbc.connect(DRIVER='{ODBC Driver 17 for SQL Server}',
                           SERVER=variables.server_name,
                           DATABASE=variables.database_name,
                           Trusted_Connection='yes')
