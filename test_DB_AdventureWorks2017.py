@@ -7,7 +7,7 @@ import variables
 class TestDataBase:
     
     drivers = [item for item in pyodbc.drivers()]
-    driver = drivers[0]
+    driver = drivers[1]
     
     conn = pyodbc.connect(DRIVER=driver,
                           SERVER=variables.server_name,
