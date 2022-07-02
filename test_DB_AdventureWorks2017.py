@@ -5,7 +5,7 @@ import variables
 
 class TestDataBase:
     
-    conn= pyodbc.connect('DRIVER={SQLDriverConnect};SERVER=locahost;PORT=1433;DATABASE=AdventureWorks2017;UID=TestUserKikar;PWD=test123', autocommit=True)
+    conn = pyodbc.connect( 'Driver={ODBC Driver 17 for SQL Server};' f'Server={EPBYMINW0F9F\SQLEXPRESS01};' 'Port:{1433};' f'Database={AdventureWorks2017};' f'UID={TestUserKikar};' f'PWD={test123};' 'Trusted_Connection=yes;')
 
     def get_dataframe(self, query):
         print(query)
