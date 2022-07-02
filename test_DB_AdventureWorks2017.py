@@ -6,10 +6,10 @@ import variables
 
 class TestDataBase:
     
-    drivers = [item for item in pyodbc.drivers()]
-    driver = drivers[1]
+#     drivers = [item for item in pyodbc.drivers()]
+#     driver = drivers[1]
     
-    conn = pyodbc.connect(DRIVER=driver,
+    conn = pyodbc.connect(DRIVER=pyodbc.drivers(),
                           SERVER=variables.server_name,
                           DATABASE=variables.database_name,
                           Trusted_Connection='yes')
