@@ -1,6 +1,6 @@
 import pandas
 import pyodbc
-import pyodbc
+import pypyodbc
 
 import variables
 
