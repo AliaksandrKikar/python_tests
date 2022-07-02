@@ -4,11 +4,15 @@ import pyodbc
 import variables
 
 class TestDataBase:
+    conn = pyodbc.connect('Driver={SQL Server};'
+                      'Server=RON\EPBYMINW0F9F;'
+                      'Database=AdventureWorks2017;'
+                      'Trusted_Connection=yes;')
     
-    conn = pyodbc.connect(DRIVER='{ODBC Driver 17 for SQL Server}',
-                          SERVER=variables.server_name,
-                          DATABASE=variables.database_name,
-                          Trusted_Connection='yes')
+#     conn = pyodbc.connect(DRIVER='{ODBC Driver 17 for SQL Server}',
+#                           SERVER=variables.server_name,
+#                           DATABASE=variables.database_name,
+#                           Trusted_Connection='yes')
         
     #conn = pyodbc.connect( 'Driver={ODBC Driver 17 for SQL Server};' f'Server=localhost;' 'Port:1433;' f'Database=AdventureWorks2017;' f'UID=TestUserKikar;' f'PWD=test123;' 'Trusted_Connection=yes;')
 
