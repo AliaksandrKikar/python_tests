@@ -9,7 +9,7 @@ class TestDataBase:
 #     drivers = [item for item in pyodbc.drivers()]
 #     driver = drivers[1]
     
-    conn = pyodbc.connect(DRIVER='/etc/odbcinst.ini',
+    conn = pyodbc.connect(DRIVER='/etc/',
                           SERVER=variables.server_name,
                           DATABASE=variables.database_name,
                           Trusted_Connection='yes')
