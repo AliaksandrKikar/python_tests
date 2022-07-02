@@ -3,9 +3,8 @@ import pyodbc
 
 import variables
 
-
 class TestDataBase:
-    conn = pyodbc.connect(DRIVER='{/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.0.so.1.1}',
+    conn = pyodbc.connect(DRIVER='{ODBC Driver 13 for SQL Server}',
                           SERVER=variables.server_name,
                           DATABASE=variables.database_name,
                           Trusted_Connection='yes')
