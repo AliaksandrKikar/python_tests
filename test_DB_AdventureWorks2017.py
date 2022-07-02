@@ -1,11 +1,12 @@
 import pandas
 import pyodbc
+import pyodbc
 
 import variables
 
 class TestDataBase:
     
-    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=EPBYMINW0F9F;DATABASE=AdventureWorks2017;UID=TestUserKikar;PWD=test123')
+    conn = pypyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=EPBYMINW0F9F;DATABASE=AdventureWorks2017;UID=TestUserKikar;PWD=test123')
     
 #     conn = pyodbc.connect('Driver={SQL Server};'
 #                       'Server=EPBYMINW0F9F;'
