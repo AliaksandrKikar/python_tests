@@ -4,10 +4,8 @@ import pyodbc
 import variables
 
 class TestDataBase:
-    conn = pyodbc.connect(DRIVER='{ODBC Driver 13 for SQL Server}',
-                          SERVER=variables.server_name,
-                          DATABASE=variables.database_name,
-                          Trusted_Connection='yes')
+    
+    conn = configuration.GetConnectionString("Server=.;Database=AdventureWorks2017;Trusted_Connection=True;");
 
     def get_dataframe(self, query):
         print(query)
