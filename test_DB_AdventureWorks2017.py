@@ -6,7 +6,7 @@ import variables
 
 class TestDataBase:
     
-    conn = pyodbc.connect(DRIVER='{SQL Server}',
+    conn = pyodbc.connect(DRIVER='{ODBC Driver 17 for SQL Server}',
                           SERVER=variables.server_name,
                           DATABASE=variables.database_name,
                           Trusted_Connection='yes')
