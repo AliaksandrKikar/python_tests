@@ -5,7 +5,7 @@ import variables
 
 class TestDataBase:
     conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=RON\EPBYMINW0F9F;'
+                      'Server=EPBYMINW0F9F;'
                       'Database=AdventureWorks2017;'
                       'Trusted_Connection=yes;')
     
