@@ -18,7 +18,7 @@ pipeline {
             }
             stage('Start automated tests') {
                 steps {
-                   sh 'python3 test_DB_AdventureWorks2017.py'
+                   sh 'pytest --html=pytest_report.html'
                 }
             }
         }
