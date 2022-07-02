@@ -5,7 +5,7 @@ import variables
 
 class TestDataBase:
     
-    conn = configuration.GetConnectionString("Server=.;Database=AdventureWorks2017;Trusted_Connection=True;");
+    conn= pyodbc.connect('DRIVER={FreeTDS};SERVER=locahost;PORT=1433;DATABASE=AdventureWorks2017;UID=TestUserKikar;PWD=test123', autocommit=True)
 
     def get_dataframe(self, query):
         print(query)
