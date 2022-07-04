@@ -2,9 +2,14 @@ import pandas
 import pyodbc
 import pypyodbc
 
-import variables
+import os
+import re
 
+import variables
 class TestDataBase:
+    
+    qualifier = re.sub(r'[-_]+', '', os.environ['BUILD_ID'])
+
     
 #     drivers = [item for item in pyodbc.drivers()]
 #     driver = drivers[1]
